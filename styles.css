@@ -1,0 +1,28 @@
+/* Java & Python Sections */
+.code-example {
+  background: #111;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+.project-link {
+  margin-top: 20px;
+}
+
+.project-link a {
+  color: #00ff00;
+  text-decoration: none;
+  border-bottom: 1px solid #00ff00;
+}
+
+.project-link a:hover {
+  text-shadow: 0 0 10px #00ff00;
+}
