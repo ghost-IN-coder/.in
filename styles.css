@@ -1,55 +1,64 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
-body {
-  background: url('images/matrix-bg.gif') no-repeat center center fixed;
-  background-size: cover;
-  color: #00ff00;
-  font-family: 'Courier New', monospace;
-}
-
-/* Sections */
-section {
-  padding: 60px 20px;
-}
-
-/* Section Titles */
-.section-title {
-  font-size: 2rem;
+/* Glitch Effect for Title */
+.glitch {
+  font-size: 2.5rem;
   text-align: center;
   color: #00ff00;
+  animation: glitch-animation 3s infinite;
 }
 
-/* Technology Grid */
-.technology-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+@keyframes glitch-animation {
+  0%, 100% {
+    text-shadow: 2px 2px #ff0000;
+  }
+  50% {
+    text-shadow: -2px -2px #0000ff;
+  }
 }
 
-.tech-card, .project-card {
+/* Animated Hero Section */
+.hero {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.8);
-  border: 2px solid #00ff00;
+  margin-bottom: 20px;
+  color: #00ff00;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  text-align: center;
+  animation: fade-in 2s ease-in-out;
+}
+
+.hero-subtext {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  animation: fade-in 3s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Technology Icons */
+.tech-card {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
   padding: 20px;
   border-radius: 10px;
-}
-
-.neon-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #00ff00;
   border: 2px solid #00ff00;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
 }
 
-.neon-btn:hover {
-  background: #00ff00;
-  color: black;
+.tech-icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
