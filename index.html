@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack the Future</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading">
+    <div class="loading-text">Initializing...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <!-- Title Bar -->
+  <header class="title-bar">
+    <h1>Hack the Future</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#java">Java</a>
+      <a href="#python">Python</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Content Sections -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="profile-section">
+      <h2 class="section-title">About Me</h2>
+      <p class="typing-text">Hi, I'm Ghost-IN-Coder. I love crafting solutions in Java and Python!</p>
+    </section>
+
+    <!-- Java Section -->
+    <section id="java">
+      <h2 class="section-title">Java</h2>
+      <div class="code-example">
+        <h3>Code Snippet</h3>
+        <pre>
+          <code class="language-java">
+// Java Program to Add Two Numbers
+public class AddNumbers {
+  public static void main(String[] args) {
+    int num1 = 10, num2 = 20;
+    int sum = num1 + num2;
+    System.out.println("The sum is: " + sum);
+  }
+}
+          </code>
+        </pre>
+      </div>
+      <div class="project-link">
+        <h3>Project</h3>
+        <p>A Simple Banking System built in Java.</p>
+        <a href="https://github.com/your-java-project" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Python Section -->
+    <section id="python">
+      <h2 class="section-title">Python</h2>
+      <div class="code-example">
+        <h3>Code Snippet</h3>
+        <pre>
+          <code class="language-python">
+# Python Program to Add Two Numbers
+num1 = 10
+num2 = 20
+sum = num1 + num2
+print(f"The sum is: {sum}")
+          </code>
+        </pre>
+      </div>
+      <div class="project-link">
+        <h3>Project</h3>
+        <p>An AI Chatbot built in Python using NLP.</p>
+        <a href="https://github.com/your-python-project" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <textarea placeholder="Type your message..." rows="5"></textarea>
+    <button class="neon-btn">Send</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ghost-IN-Coder. Made in the shadows.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</body>
+</html>
