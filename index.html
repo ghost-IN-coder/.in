@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hack the Future</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
   <!-- Loading Screen -->
@@ -20,68 +21,101 @@
     <h1>Hack the Future</h1>
     <nav class="nav">
       <a href="#about">About</a>
+      <a href="#technologies">Technologies</a>
       <a href="#projects">Projects</a>
-      <a href="#java">Java</a>
-      <a href="#python">Python</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Content Sections -->
-  <main>
-    <!-- About Section -->
-    <section id="about" class="profile-section">
-      <h2 class="section-title">About Me</h2>
-      <p class="typing-text">Hi, I'm Ghost-IN-Coder. I love crafting solutions in Java and Python!</p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="profile-section">
+    <h2 class="section-title">About Me</h2>
+    <div class="profile-card">
+      <img src="images/profile.jpg" alt="Ghost-IN-Coder" class="profile-img">
+      <p class="typing-text">Hi, I'm Ghost-IN-Coder. I specialize in Java, Python, HTML, CSS, and PHP. Crafting the future, one line of code at a time.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank"><img src="images/instagram-logo.png" alt="Instagram"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="Twitter"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/github-logo.png" alt="GitHub"></a>
+        <a href="https://replit.com/" target="_blank"><img src="images/replit-logo.png" alt="Replit"></a>
+        <a href="https://discord.com/" target="_blank"><img src="images/discord-logo.png" alt="Discord"></a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Java Section -->
-    <section id="java">
-      <h2 class="section-title">Java</h2>
-      <div class="code-example">
-        <h3>Code Snippet</h3>
-        <pre>
-          <code class="language-java">
-// Java Program to Add Two Numbers
-public class AddNumbers {
+  <!-- Technologies Section -->
+  <section id="technologies">
+    <h2 class="section-title">Technologies</h2>
+    <div class="technology-grid">
+      <div class="tech-card">
+        <h3>Java</h3>
+        <pre><code class="language-java">
+// Java: Hello World Example
+public class HelloWorld {
   public static void main(String[] args) {
-    int num1 = 10, num2 = 20;
-    int sum = num1 + num2;
-    System.out.println("The sum is: " + sum);
+    System.out.println("Hello, World!");
   }
 }
-          </code>
-        </pre>
+        </code></pre>
       </div>
-      <div class="project-link">
-        <h3>Project</h3>
-        <p>A Simple Banking System built in Java.</p>
-        <a href="https://github.com/your-java-project" target="_blank">View on GitHub</a>
+      <div class="tech-card">
+        <h3>Python</h3>
+        <pre><code class="language-python">
+# Python: Hello World Example
+print("Hello, World!")
+        </code></pre>
       </div>
-    </section>
+      <div class="tech-card">
+        <h3>HTML</h3>
+        <pre><code class="language-html">
+<!-- HTML: Hello World Example -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+        </code></pre>
+      </div>
+      <div class="tech-card">
+        <h3>CSS</h3>
+        <pre><code class="language-css">
+/* CSS: Hello World Styling */
+body {
+  background: black;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+        </code></pre>
+      </div>
+      <div class="tech-card">
+        <h3>PHP</h3>
+        <pre><code class="language-php">
+<!-- PHP: Hello World Example -->
+<?php
+  echo "Hello, World!";
+?>
+        </code></pre>
+      </div>
+    </div>
+  </section>
 
-    <!-- Python Section -->
-    <section id="python">
-      <h2 class="section-title">Python</h2>
-      <div class="code-example">
-        <h3>Code Snippet</h3>
-        <pre>
-          <code class="language-python">
-# Python Program to Add Two Numbers
-num1 = 10
-num2 = 20
-sum = num1 + num2
-print(f"The sum is: {sum}")
-          </code>
-        </pre>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1: AI Assistant</h3>
+        <p>A conversational AI built with Python.</p>
+        <a href="https://github.com/" target="_blank" class="neon-btn">View on GitHub</a>
       </div>
-      <div class="project-link">
-        <h3>Project</h3>
-        <p>An AI Chatbot built in Python using NLP.</p>
-        <a href="https://github.com/your-python-project" target="_blank">View on GitHub</a>
+      <div class="project-card">
+        <h3>Project 2: Portfolio Website</h3>
+        <p>A sleek portfolio designed using HTML and CSS.</p>
+        <a href="https://github.com/" target="_blank" class="neon-btn">View on GitHub</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -92,11 +126,7 @@ print(f"The sum is: {sum}")
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ghost-IN-Coder. Made in the shadows.</p>
+    <p>&copy; 2025 Ghost-IN-Coder. Built in the shadows.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 </body>
 </html>
