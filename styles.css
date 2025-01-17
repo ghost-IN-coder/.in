@@ -1,28 +1,55 @@
-/* Java & Python Sections */
-.code-example {
-  background: #111;
-  padding: 20px;
-  border: 2px solid #00ff00;
-  border-radius: 10px;
-  margin: 20px 0;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: url('images/matrix-bg.gif') no-repeat center center fixed;
+  background-size: cover;
   color: #00ff00;
   font-family: 'Courier New', monospace;
 }
 
-pre {
-  overflow-x: auto;
+/* Sections */
+section {
+  padding: 60px 20px;
 }
 
-.project-link {
-  margin-top: 20px;
-}
-
-.project-link a {
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
   color: #00ff00;
-  text-decoration: none;
-  border-bottom: 1px solid #00ff00;
 }
 
-.project-link a:hover {
-  text-shadow: 0 0 10px #00ff00;
+/* Technology Grid */
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tech-card, .project-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.neon-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.neon-btn:hover {
+  background: #00ff00;
+  color: black;
 }
