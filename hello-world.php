@@ -1,6 +1,4 @@
-/* CSS: Hello World Example */
-body {
-  background: black;
-  color: white;
-  font-family: 'Courier New', monospace;
-}
+<?php
+// PHP: Hello World Example
+echo "Hello, World!";
+?>
