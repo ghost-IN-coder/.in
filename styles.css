@@ -1,21 +1,50 @@
-/* Glitch Effect for Title */
-.glitch {
-  font-size: 2.5rem;
-  text-align: center;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: url('images/matrix-bg.gif') no-repeat center center fixed;
+  background-size: cover;
   color: #00ff00;
-  animation: glitch-animation 3s infinite;
+  font-family: 'Courier New', monospace;
+  overflow-x: hidden;
 }
 
-@keyframes glitch-animation {
-  0%, 100% {
-    text-shadow: 2px 2px #ff0000;
-  }
-  50% {
-    text-shadow: -2px -2px #0000ff;
-  }
+/* Title Bar */
+.title-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ff00;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
-/* Animated Hero Section */
+.title-bar h1 {
+  font-family: 'Hackdaddy', monospace;
+  font-size: 1.5rem;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  text-shadow: 0 0 10px #00ff00;
+}
+
+/* Hero Section */
 .hero {
   height: 300px;
   display: flex;
@@ -48,17 +77,89 @@
   }
 }
 
-/* Technology Icons */
-.tech-card {
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.9);
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  margin-bottom: 20px;
+}
+
+/* Technology Section */
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tech-card {
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
   border: 2px solid #00ff00;
 }
 
-.tech-icon img {
+.tech-card img {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
+}
+
+/* Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  background: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Terminal Section */
+.terminal {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+#terminal-input {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #111;
+  color: #00ff00;
 }
