@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-  background: url('images/matrix-bg.gif') no-repeat center center fixed;
+  background: url('matrix-bg.gif') no-repeat center center fixed;
   background-size: cover;
   color: #00ff00;
   font-family: 'Courier New', monospace;
@@ -21,7 +21,7 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   color: #00ff00;
-  padding: 10px 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@ body {
 
 .title-bar h1 {
   font-family: 'Hackdaddy', monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .nav a {
