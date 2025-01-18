@@ -5,9 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hack the Future</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Dynamic Themes -->
+  <div id="theme-switcher">
+    <button id="dark-mode">Dark Mode</button>
+    <button id="light-mode">Light Mode</button>
+  </div>
+
   <!-- Loading Screen -->
   <div id="loading">
     <div class="loading-text">Initializing...</div>
@@ -16,12 +22,12 @@
     </div>
   </div>
 
-  <!-- Title Bar -->
+  <!-- Sticky Navigation -->
   <header class="title-bar">
     <h1 class="glitch">Hack the Future</h1>
     <nav class="nav">
       <a href="#about">About</a>
-      <a href="#technologies">Technologies</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#terminal">Live Terminal</a>
       <a href="#contact">Contact</a>
@@ -31,75 +37,26 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1 class="hero-text">Breaking Systems, Building Futures</h1>
-    <p class="hero-subtext">Explore Java, Python, HTML, CSS, PHP, and more...</p>
+    <p class="hero-subtext" id="user-greeting">Welcome, Hacker!</p>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="profile-section">
-    <h2 class="section-title">About Me</h2>
-    <div class="profile-card">
-      <img src="profile.jpg" alt="Ghost-IN-Coder" class="profile-img">
-      <p>Hi, I'm Ghost-IN-Coder. Crafting the future, one line of code at a time.</p>
-      <div class="social-links">
-        <a href="https://instagram.com/" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="twitter-logo.png" alt="Twitter"></a>
-        <a href="https://github.com/" target="_blank"><img src="github-logo.png" alt="GitHub"></a>
-        <a href="https://replit.com/" target="_blank"><img src="replit-logo.png" alt="Replit"></a>
-        <a href="https://discord.com/" target="_blank"><img src="discord-logo.png" alt="Discord"></a>
-      </div>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <canvas id="skills-chart"></canvas>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2 class="section-title">Achievements</h2>
+    <div class="badges">
+      <div class="badge">Code Master</div>
+      <div class="badge">Bug Hunter</div>
+      <div class="badge">Quantum Explorer</div>
     </div>
   </section>
 
-  <!-- Technologies Section -->
-  <section id="technologies">
-    <h2 class="section-title">Technologies</h2>
-    <div class="technology-grid">
-      <div class="tech-card">
-        <h3>Java</h3>
-        <img src="java-icon.png" alt="Java Icon">
-        <p>Powerful, efficient, and versatile.</p>
-      </div>
-      <div class="tech-card">
-        <h3>Python</h3>
-        <img src="python-icon.png" alt="Python Icon">
-        <p>Simple and great for AI and data science.</p>
-      </div>
-      <div class="tech-card">
-        <h3>HTML</h3>
-        <img src="html-icon.png" alt="HTML Icon">
-        <p>The structure of every webpage.</p>
-      </div>
-      <div class="tech-card">
-        <h3>CSS</h3>
-        <img src="css-icon.png" alt="CSS Icon">
-        <p>Style and animate your web experience.</p>
-      </div>
-      <div class="tech-card">
-        <h3>PHP</h3>
-        <img src="php-icon.png" alt="PHP Icon">
-        <p>Dynamic backend for your applications.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>AI Chatbot</h3>
-        <p>Built with Python</p>
-        <a href="https://github.com/" target="_blank" class="neon-btn">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Dynamic Portfolio</h3>
-        <p>Built with HTML, CSS, and JavaScript</p>
-        <a href="https://github.com/" target="_blank" class="neon-btn">View on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Live Terminal Section -->
+  <!-- Terminal Section -->
   <section id="terminal">
     <h2 class="section-title">Live Terminal</h2>
     <div class="terminal">
@@ -108,11 +65,19 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+    <div id="testimonial-carousel">
+      <p>"Working with Ghost-IN-Coder was an amazing experience!" - Client</p>
+    </div>
+  </section>
+
+  <!-- Feedback Form -->
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <textarea placeholder="Type your message..." rows="5"></textarea>
-    <button class="neon-btn">Send</button>
+    <textarea placeholder="Your feedback..." rows="5"></textarea>
+    <button class="neon-btn">Send Feedback</button>
   </section>
 
   <!-- Footer -->
