@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hack the Future</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Loading Screen -->
@@ -23,28 +23,29 @@
       <a href="#about">About</a>
       <a href="#technologies">Technologies</a>
       <a href="#projects">Projects</a>
+      <a href="#terminal">Live Terminal</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Animated Hero Section -->
+  <!-- Hero Section -->
   <section class="hero">
     <h1 class="hero-text">Breaking Systems, Building Futures</h1>
-    <p class="hero-subtext">Explore Java, Python, HTML, CSS, and PHP</p>
+    <p class="hero-subtext">Explore Java, Python, HTML, CSS, PHP, and more...</p>
   </section>
 
   <!-- About Section -->
   <section id="about" class="profile-section">
     <h2 class="section-title">About Me</h2>
     <div class="profile-card">
-      <img src="profile.jpg" alt="Ghost-IN-Coder" class="profile-img">
-      <p class="typing-text">Hi, I'm Ghost-IN-Coder. Crafting the future, one line of code at a time.</p>
+      <img src="images/profile.jpg" alt="Ghost-IN-Coder" class="profile-img">
+      <p>Hi, I'm Ghost-IN-Coder. Crafting the future, one line of code at a time.</p>
       <div class="social-links">
-        <a href="https://instagram.com/" target="_blank"><img src="instagram-logo.webp" alt="Instagram"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="twitter-logo.png" alt="Twitter"></a>
-        <a href="https://github.com/" target="_blank"><img src="github-logo.png" alt="GitHub"></a>
-        <a href="https://replit.com/" target="_blank"><img src="replit-logo.png" alt="Replit"></a>
-        <a href="https://discord.com/" target="_blank"><img src="discord-logo.png" alt="Discord"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="images/instagram-logo.png" alt="Instagram"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="Twitter"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/github-logo.png" alt="GitHub"></a>
+        <a href="https://replit.com/" target="_blank"><img src="images/replit-logo.png" alt="Replit"></a>
+        <a href="https://discord.com/" target="_blank"><img src="images/discord-logo.png" alt="Discord"></a>
       </div>
     </div>
   </section>
@@ -55,38 +56,28 @@
     <div class="technology-grid">
       <div class="tech-card">
         <h3>Java</h3>
-        <div class="tech-icon">
-          <img src="java-icon.png" alt="Java">
-        </div>
-        <p>Write scalable and efficient applications.</p>
+        <img src="images/tech-icons/java-icon.png" alt="Java Icon">
+        <p>Powerful, efficient, and versatile.</p>
       </div>
       <div class="tech-card">
         <h3>Python</h3>
-        <div class="tech-icon">
-          <img src="python-icon.png" alt="Python">
-        </div>
-        <p>Build AI, ML, and data science projects.</p>
+        <img src="images/tech-icons/python-icon.png" alt="Python Icon">
+        <p>Simple and great for AI and data science.</p>
       </div>
       <div class="tech-card">
         <h3>HTML</h3>
-        <div class="tech-icon">
-          <img src="html-icon.png" alt="HTML">
-        </div>
-        <p>Create the structure of web pages.</p>
+        <img src="images/tech-icons/html-icon.png" alt="HTML Icon">
+        <p>The structure of every webpage.</p>
       </div>
       <div class="tech-card">
         <h3>CSS</h3>
-        <div class="tech-icon">
-          <img src="images/css-icon.png" alt="CSS">
-        </div>
-        <p>Style and animate web pages.</p>
+        <img src="images/tech-icons/css-icon.png" alt="CSS Icon">
+        <p>Style and animate your web experience.</p>
       </div>
       <div class="tech-card">
         <h3>PHP</h3>
-        <div class="tech-icon">
-          <img src="images/php-icon.png" alt="PHP">
-        </div>
-        <p>Build dynamic server-side applications.</p>
+        <img src="images/tech-icons/php-icon.png" alt="PHP Icon">
+        <p>Dynamic backend for your applications.</p>
       </div>
     </div>
   </section>
@@ -96,15 +87,24 @@
     <h2 class="section-title">Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <h3>AI Assistant</h3>
+        <h3>AI Chatbot</h3>
         <p>Built with Python</p>
         <a href="https://github.com/" target="_blank" class="neon-btn">View on GitHub</a>
       </div>
       <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Built with HTML & CSS</p>
+        <h3>Dynamic Portfolio</h3>
+        <p>Built with HTML, CSS, and JavaScript</p>
         <a href="https://github.com/" target="_blank" class="neon-btn">View on GitHub</a>
       </div>
+    </div>
+  </section>
+
+  <!-- Live Terminal Section -->
+  <section id="terminal">
+    <h2 class="section-title">Live Terminal</h2>
+    <div class="terminal">
+      <p id="terminal-output"></p>
+      <input id="terminal-input" type="text" placeholder="Type your command..." autocomplete="off">
     </div>
   </section>
 
