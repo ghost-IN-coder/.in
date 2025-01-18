@@ -2,23 +2,15 @@
 |-- index.html
 |-- styles.css
 |-- script.js
-|-- images/
-|   |-- profile.jpg
-|   |-- instagram-logo.png
-|   |-- twitter-logo.png
-|   |-- github-logo.png
-|   |-- replit-logo.png
-|   |-- discord-logo.png
-|   |-- matrix-bg.gif
-|   |-- tech-icons/
-|       |-- java-icon.png
-|       |-- python-icon.png
-|       |-- html-icon.png
-|       |-- css-icon.png
-|       |-- php-icon.png
-|-- snippets/
-|   |-- hello-world.java
-|   |-- hello-world.py
-|   |-- hello-world.html
-|   |-- hello-world.css
-|   |-- hello-world.php
+|-- profile.jpg
+|-- instagram-logo.png
+|-- twitter-logo.png
+|-- github-logo.png
+|-- replit-logo.png
+|-- discord-logo.png
+|-- java-icon.png
+|-- python-icon.png
+|-- html-icon.png
+|-- css-icon.png
+|-- php-icon.png
+|-- matrix-bg.gif
