@@ -1,65 +1,56 @@
-// Typing Effect for Hero Section
-const text = "Breaking Systems, Building Futures...";
-let i = 0;
-const heroText = document.querySelector(".hero-text");
-function typeEffect() {
-  if (i < text.length) {
-    heroText.textContent += text.charAt(i);
-    i++;
-    setTimeout(typeEffect, 50);
-  }
-}
+// Dynamic Theme Switching
+const darkModeBtn = document.getElementById("dark-mode");
+const lightModeBtn = document.getElementById("light-mode");
 
-// Loading Screen Logic
-let load = 0;
-const loadingScreen = document.getElementById("loading");
-const progress = document.querySelector(".loading-progress");
-function updateLoading() {
-  if (load < 100) {
-    load++;
-    progress.style.width = `${load}%`;
-    setTimeout(updateLoading, 30);
-  } else {
-    loadingScreen.style.opacity = "0";
-    setTimeout(() => {
-      loadingScreen.style.display = "none";
-      typeEffect();
-    }, 500);
-  }
-}
+darkModeBtn.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#000";
+  document.body.style.color = "#00ff00";
+});
 
-// Run the loading screen logic on page load
-window.onload = updateLoading;
+lightModeBtn.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#fff";
+  document.body.style.color = "#000";
+});
 
-// Terminal Simulation (for the Live Terminal)
+// Live Terminal
 const terminalOutput = document.getElementById("terminal-output");
 const terminalInput = document.getElementById("terminal-input");
-
 const commands = [
   "Accessing files...",
   "Decrypting data...",
   "Connection established...",
-  "Login successful...",
-  "Running diagnostics..."
 ];
 
-let currentCommand = 0;
-
-function typeTerminalCommand() {
-  if (currentCommand < commands.length) {
-    terminalOutput.textContent += commands[currentCommand] + "\n";
-    currentCommand++;
-    setTimeout(typeTerminalCommand, 1500);
+terminalInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    terminalOutput.textContent += `> ${terminalInput.value}\n`;
+    terminalInput.value = "";
   }
+});
+
+// User Greeting
+const greetingElement = document.getElementById("user-greeting");
+const hours = new Date().getHours();
+if (hours < 12) {
+  greetingElement.textContent = "Good Morning, Hacker!";
+} else if (hours < 18) {
+  greetingElement.textContent = "Good Afternoon, Hacker!";
+} else {
+  greetingElement.textContent = "Good Evening, Hacker!";
 }
 
-terminalInput.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    terminalOutput.textContent += `$ ${terminalInput.value}\n`;
-    terminalInput.value = "";
-    if (currentCommand === commands.length) {
-      typeTerminalCommand();
-    }
-  }
+// Skills Chart (using Chart.js)
+const ctx = document.getElementById("skills-chart").getContext("2d");
+new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["JavaScript", "Python", "HTML", "CSS", "PHP"],
+    datasets: [
+      {
+        label: "Skill Level",
+        data: [85, 90, 80, 75, 70],
+        backgroundColor: "#00ff00",
+      },
+    ],
+  },
 });
