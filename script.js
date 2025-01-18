@@ -28,12 +28,13 @@ terminalInput.addEventListener("keypress", (e) => {
   }
 });
 
-// User Greeting
+// Dynamic User Greeting
 const greetingElement = document.getElementById("user-greeting");
-const hours = new Date().getHours();
-if (hours < 12) {
+const currentHour = new Date().getHours();
+
+if (currentHour < 12) {
   greetingElement.textContent = "Good Morning, Hacker!";
-} else if (hours < 18) {
+} else if (currentHour < 18) {
   greetingElement.textContent = "Good Afternoon, Hacker!";
 } else {
   greetingElement.textContent = "Good Evening, Hacker!";
