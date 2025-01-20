@@ -7,7 +7,7 @@
   
   /* Body */
   body {
-    background: url('images/matrix-bg.gif') no-repeat center center fixed;
+    background: url('matrix-bg.gif') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;  /* Modern font */
     overflow-x: hidden;
