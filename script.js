@@ -64,7 +64,7 @@ function debounce(func, wait) {
 // Matrix Rain Effect
 const matrixBg = document.createElement("div");
 matrixBg.classList.add("matrix-bg");
-document.body.appendChild(matrixBg);
+document.body.appendChild(matrix-Bg);
 
 const columns = Math.floor(window.innerWidth / 20);
 
