@@ -12,18 +12,6 @@ function typeEffect() {
   }
 }
 
-// Loading Screen Logic
-window.onload = function () {
-  // Hide the loading screen after the page is loaded
-  const loadingScreen = document.getElementById("loading");
-  setTimeout(() => {
-    loadingScreen.style.opacity = "0";
-    setTimeout(() => (loadingScreen.style.display = "none"), 500);
-  }, 3000); // Wait for 3 seconds
-
-  // Run the typing effect after the loading screen disappears
-  setTimeout(typeEffect, 500);  // Run after a slight delay to ensure loading is complete
-};
 // Scroll Animation Trigger
 const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in');
 
@@ -64,7 +52,7 @@ function debounce(func, wait) {
 // Matrix Rain Effect
 const matrixBg = document.createElement("div");
 matrixBg.classList.add("matrix-bg");
-document.body.appendChild(matrix-Bg);
+document.body.appendChild(matrixBg);
 
 const columns = Math.floor(window.innerWidth / 20);
 
